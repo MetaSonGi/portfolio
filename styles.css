@@ -155,3 +155,17 @@ a.p-contact-card:hover{border-color:var(--accent)}
   .hint{font-size:11px;gap:10px;padding:8px 14px;bottom:12px;max-width:94vw;overflow-x:auto}
   .p-tech{grid-template-columns:1fr}
 }
+
+/* ---------- 놀이기구 패널 헤더 ---------- */
+.p-ride{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px;margin-bottom:20px}
+.p-ride-row{display:flex;gap:12px;align-items:center;margin-bottom:12px}
+.p-ride-icon{font-size:34px}
+.p-ride-row h3{font-size:17px}
+.p-ride-row p{font-size:12.5px;color:var(--muted);margin-top:2px}
+.p-ride-btn{width:100%;padding:11px;border:none;border-radius:10px;font-size:15px;font-weight:800;color:#fff;background:linear-gradient(135deg,var(--accent),#3b5fd9);cursor:pointer}
+.p-ride-btn:hover{filter:brightness(1.15)}
+
+/* ---------- 탑승 상태 칩 ---------- */
+#ride-chip{position:absolute;bottom:64px;left:50%;transform:translateX(-50%);display:flex;gap:12px;align-items:center;background:rgba(10,14,24,.92);border:1px solid var(--accent);padding:9px 16px;border-radius:999px;font-size:13px;font-weight:700;z-index:6;white-space:nowrap}
+#ride-chip.hidden{display:none}
+#ride-chip button{background:var(--accent);border:none;color:#fff;font-weight:700;padding:6px 14px;border-radius:999px;cursor:pointer;font-size:12px}

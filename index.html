@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<title>손효기 Hyogi Son — LEGO 월드 포트폴리오</title>
+<title>손효기 Hyogi Son — LEGO 놀이동산 포트폴리오</title>
 <meta name="description" content="손효기(Hyogi Son) — 레고 게임 월드 포트폴리오. 마을을 돌아다니며 기술, 경력, 프로젝트를 만나보세요.">
 <link rel="stylesheet" href="styles.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,7 +13,7 @@
 <body>
 
 <nav class="game-nav">
-  <div class="nav-logo">&lt;Hyogi Son /&gt; <span class="nav-sub">🧱 LEGO World</span></div>
+  <div class="nav-logo">&lt;Hyogi Son /&gt; <span class="nav-sub">🎢 HYOGI LAND</span></div>
   <div class="nav-zones">
     <button data-zone="tech">🧱 기술</button>
     <button data-zone="about">😊 소개</button>
@@ -27,9 +27,10 @@
   <canvas id="game"></canvas>
   <div id="labels"></div>
   <div class="hint" id="hint">
-    <span>🖱️ 클릭으로 이동</span><span>⌨️ WASD / 방향키</span><span>🏠 구역에 들어가면 설명 표시</span>
+    <span>🎢 놀이기구에 타보세요</span><span>🖱️ 클릭으로 이동</span><span>⌨️ WASD / 방향키</span>
     <button id="hint-close" aria-label="힌트 닫기">✕</button>
   </div>
+  <div id="ride-chip" class="hidden"><span id="ride-chip-text"></span><button id="ride-chip-btn">내리기</button></div>
   <div id="loading"><div class="load-box">🧱<p>레고 월드를 조립하는 중…</p></div></div>
 </div>
 
