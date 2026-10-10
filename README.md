@@ -1,18 +1,23 @@
-# Hyogi Son — Portfolio
+# Hyogi Son — LEGO 월드 포트폴리오
 
-손효기(Hyogi Son) 개인 포트폴리오 사이트. Smart Factory · Digital Twin · AI Developer.
+손효기(Hyogi Son) 개인 포트폴리오 사이트. **Three.js로 만든 3D 레고 게임 월드** — 미니피겨 캐릭터로 마을을 돌아다니며 포트폴리오를 탐색합니다.
 
 - **기술**: HTML / CSS / JavaScript / Three.js (CDN)
-- **배포**: GitHub Pages (정적 사이트)
+- **배포**: GitHub Pages + Vercel (GitHub push 시 자동 재배포)
 
-## 구조
+## 게임 플레이
 
-- Hero — Three.js 파티클 네트워크 배경, 이름/타이틀/CTA, 픽셀 로봇 캐릭터(마우스 따라다니기·클릭 점프)
-- Technologies — 주력 기술 카드 6종 + 기타 기술 칩
-- About me — 소개, 프로필 카드, 숫자 카운터
-- Career — 현장 프로젝트 타임라인(XR/디지털트윈), 학력, 스킬바
-- Projects — GitHub 공개 프로젝트 8종 (라이브 데모 링크)
-- Contact — 이메일 / GitHub / 위치
+- 🖱️ **클릭으로 이동** — 바닥을 클릭하면 캐릭터가 걸어갑니다
+- ⌨️ **WASD / 방향키** — 직접 조종
+- 🏠 **구역 진입** — 5개 구역(🧱 기술 스택 / 😊 소개 / 📜 경력 / 🚀 프로젝트 / ✉️ 연락)에 들어가면 설명 패널이 열립니다
+- 🧭 **상단 메뉴** — 버튼을 누르면 캐릭터가 해당 구역으로 걸어갑니다
+- 🏢 **건물 클릭** — 건물을 클릭해도 바로 이동 + 패널 열기
+
+## 월드 구성
+
+- 레고 베이스플레이트(스터드 포함), 중앙 분수 광장, 도로, 가로등, 나무, 구름, 별
+- 밤하늘 디오라마: 불 켜진 창문, 가로등 불빛
+- 레고 미니피겨 스타일 캐릭터 (걷기 애니메이션)
 
 ## 로컬 미리보기
 
@@ -21,3 +26,9 @@ cd ~/workspace/github-projects/portfolio
 python3 -m http.server 8000
 # http://localhost:8000
 ```
+
+## 파일
+
+- `index.html` — 게임 셸 (네비, 캔버스, 패널)
+- `styles.css` — 게임 UI 스타일
+- `game.js` — Three.js 월드 + 캐릭터 + 패널 전체 로직
